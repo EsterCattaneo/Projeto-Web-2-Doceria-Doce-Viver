@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doceria Doce Viver</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/navegation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/criarConta.css">
+      
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script defer src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+
+<!-- Add additional services you want to use -->
+<script defer src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth-compat.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/10.5.2/firebase-database-compat.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore-compat.js"></script>
+<!-- and so on for other services... -->
+
+<!-- Initialize Firebase -->
+<script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+</head>
+
+<body> 
+    <div class="header">
+        <div class="image"></div>
+        <nav>
+            <a class="btn" href="index.html">Home</a>
+            <a class="btn" href="sobreNos.html">Sobre nós</a>
+            <a class="btn" href="cardapio.html">Cardápio</a>
+            <a class="btn" href="galeria.html">Galeria</a>
+            <a class="btn" href="ifsp.html">IFSP</a>
+            <a class="btn" href="autenticacao.html">Faça seu pedido</a>
+            <a class="btn" href="faleConosco.html">Fale Conosco</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="form-wrapper"> <!-- Div para envolver a seção do formulário -->
+            <div class="screen">
+                <div class="screen__content">
+                    <h3>log in via</h3>
+                     <button class="social-login__icon fab fa-google" id="authGoogleButton"> google</i></button>
+                     <button class="social-login__icon fas fa-user-secret" id="authAnonymouslyButton"> Anonimo</button>
+                    <h1>Create an Account</h1>
+                    <form id="registerForm" class="login">
+    <div class="form-group">
+        <i class="login__icon fas fa-user"></i>
+        <label for="fullName" class="icon-label">Nome completo</label>
+        <input type="text" id="fullName" class="login__input" placeholder="Nome completo">
+    </div>
+    <div class="form-group">
+        <i class="login__icon fas fa-calendar"></i>
+        <label for="dateInput" class="icon-label">Data de Nascimento</label>
+        <input type="date" id="dob" class="login__input" placeholder="Data de Nascimento">
+    </div>
+    <div class="form-group">
+        <i class="login__icon fas fa-envelope"></i>
+        <label for="emailInput" class="icon-label">E-mail</label>
+        <input type="email" class="login__input" id="emailInput" placeholder="E-mail">
+    </div>
+    <div class="form-group">
+        <i class="login__icon fas fa-lock"></i>
+        <label for="passwordInput" class="icon-label">Senha</label>
+        <input type="password" class="login__input" id="passwordInput" placeholder="Senha">
+    </div>
+    <div class="form-group">
+        <i class="login__icon fas fa-lock"></i>
+        <label for="confirmPasswordInput" class="icon-label">Confirme sua senha</label>
+        <input type="password" class="login__input" id="confirmPasswordInput" placeholder="Confirme sua senha">
+    </div>
+    <button class="btn btn-lg btn-block btn-info" id="createUserButton">Criar Nova Conta</button>			
+</form>
+
+                    
+                        <button class="btn btn-lg btn-block btn-info" id="createUserButton">Criar Nova Conta</button>			
+                    </form>
+                </div>	
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-basic">
+            <div class="social">
+                <a href="https://www.instagram.com/doce_viver_sh/?igsh=d21oNHhyb253dmZv"><i class="icon ion-social-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=seu-numero-de-telefone"><i class="icon ion-social-whatsapp"></i></a>
+                <a href="https://maps.app.goo.gl/xmEBu6z6M5VTdjGd9"><i class="fa fa-map-marker"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Início</a></li>
+                <li class="list-inline-item"><a href="sobreNos.html">Sobre nós</a></li>
+                <li class="list-inline-item"><a href="cardapio.html">Cardápio</a></li>
+                <li class="list-inline-item"><a href="galeria.html">Galeria</a></li>
+                <li class="list-inline-item"><a href="ifsp.html">IFSP</a></li>
+            </ul>
+            <p class="copyright">Doce Viver © 2024</p>
+        </div>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth.js"></script>
+    <script src="JS/autenticacao.js" defer></script> <!-- Use 'defer' para garantir que o script seja executado após a renderização da página -->
+</body>
+</html>

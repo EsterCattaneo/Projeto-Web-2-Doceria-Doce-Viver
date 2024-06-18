@@ -1,0 +1,13 @@
+#pedido {
+    margin-top: 20px;
+}
+
+#itens-selecionados {
+    list-style-type: none;
+    padding: 0;
+}
+
+.btn-add {
+    cursor: pointer;
+    color: blue;
+}

@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0c6b0;
+    padding: 75px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.content {
+    display: flex; 
+    justify-content: center; 
+}
+
+.text-about {
+    flex: 1; /* Ocupa todo o espaço disponível */
+    max-width: 50%; /* Define a largura máxima */
+    margin-right: 20px; 
+    padding: 20px;
+    font-size: 1.2em;
+    box-sizing: border-box; /* Considera padding e borda no cálculo da largura */
+}
+
+.mapa {
+    max-width: 50%; 
+    margin-top: 20px;
+    margin-left: 20px; 
+    box-sizing: border-box;
+}

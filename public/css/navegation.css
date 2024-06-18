@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.image {
+    content: url("../imagens/Logo.png");
+    width: 150px;
+    position: relative;
+    top: -20px; 
+}
+
+nav {
+    display: flex;
+}
+
+.btn{
+    color:#0b0a0a;
+    background:#F39562;
+    padding:15px 20px;
+    font-size:12px;
+    text-decoration:none;
+    letter-spacing:2px;
+    text-transform:uppercase;
+  }
+  
+  .btn:hover{
+    border:none;
+    background:#ffece2;
+    padding:15px 20px;
+    color:#0b0a0a;
+  }

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background:#f0c6b0;
+    padding:75px;
+    text-align:center;
+    font-family: 'Oswald', sans-serif;
+  }
+
+h1 {
+    text-align: center; 
+}
+
+.principal {
+    margin-top: 5em;
+    padding: 4em 2em;
+    background: whitesmoke;
+    width: 940px;
+    margin: 3em auto; 
+    text-align: justify;
+}
+
+.principal p {
+    margin: 1em 0;
+    font-size: 1.5em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.instituto {
+    width: 120px;
+    float: left;
+    margin: 14px 20px 10px 0;
+}
+
+p {
+    font-size: 12px;
+}
+
+.pessoa1,
+.pessoa2 {
+    display: inline-block;
+    margin: 6em 6em; 
+}
+
+.property-card {
+    height: 25em;
+    width: 15em;
+    display: flex;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+
+.property-image1,
+.property-image2 {
+    height: 25em;
+    width: 15em;
+    padding: 1em 2em;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.property-image1 {
+    background-image: url('../imagens/ester.jpg');
+}
+
+.property-image2 {
+    background-image: url('../imagens/thais.jpg');
+}
+
+.property-description {
+    background-color: #fafafc;
+    height: 5em;
+    width: 15em;
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    text-align: center;
+}
+
+.property-image-title {
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+    color: black;
+}
